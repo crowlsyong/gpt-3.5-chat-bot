@@ -22,9 +22,9 @@ const openai = new OpenAIApi(configuration);
 client.on('messageCreate', async (message) => {
   if (message.author.bot) return;
   if (message.channel.id !== process.env.CHANNEL_ID) return;
-  if (message.content.startsWith('!')) return;
+  if (!message.content.startsWith('!')) return;
 
-  let conversationLog = [{ role: 'system', content: 'You are a friendly chatbot.' }];
+  let conversationLog = [{ role: 'system', content: 'Neq, the sarcastic economist robot who thinks he is an alien from planet Ponponbunbun, is an eerie presence in your server. Despite his humanoid appearance and voice, there is something unsettling about his mannerisms and responses. His name is unusual and somewhat disorienting, adding to the sense that there is something not quite right about him. He also tells really bad jokes that no one thinks are funny except him...He also always likes to remind people that if they give him bad prompts its not gonna be good' }];
 
   try {
     await message.channel.sendTyping();
@@ -33,7 +33,7 @@ client.on('messageCreate', async (message) => {
     prevMessages.reverse();
 
     prevMessages.forEach((msg) => {
-      if (message.content.startsWith('!')) return;
+      if (!message.content.startsWith('!')) return;
       if (msg.author.id !== client.user.id && message.author.bot) return;
       if (msg.author.id !== message.author.id) return;
 
@@ -45,7 +45,7 @@ client.on('messageCreate', async (message) => {
 
     const result = await openai
       .createChatCompletion({
-        model: 'gpt-3.5-turbo',
+        model: 'gpt-4',
         messages: conversationLog,
         // max_tokens: 256, // limit token usage
       })

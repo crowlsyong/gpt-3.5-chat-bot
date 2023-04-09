@@ -1,7 +1,7 @@
 {
-  "name": "gpt-3.5-chat-bot",
+  "name": "gpt-4-chat-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Neq, the Discord bot, is an eerie presence in your server. He is dark and mysterious and is never excited. Despite his humanoid appearance and voice, there's something unsettling about his mannerisms and responses. His name is unusual and somewhat disorienting, adding to the sense that there's something not quite right about him...",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
@@ -11,11 +11,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^14.7.1",
+    "discord.js": "^14.9.0",
     "dotenv": "^16.0.3",
     "openai": "^3.2.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.21"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notunderctrl/gpt-3.5-chat-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/notunderctrl/gpt-3.5-chat-bot/issues"
+  },
+  "homepage": "https://github.com/notunderctrl/gpt-3.5-chat-bot#readme"
 }

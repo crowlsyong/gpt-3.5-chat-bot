@@ -1,6 +1,7 @@
 # GPT 3̶.̶5̶ ̶t̶u̶r̶b̶o̶ 4 Chat Bot
 
 This is a simple Discord chat bot built using discord.js and the gpt-3.5-turbo model from Open AI. This is the same model used for the popular chatbot Chat GPT.
+Original version here: https://github.com/notunderctrl/gpt-3.5-chat-bot
 
 A full video tutorial for this chat bot can be found [here](https://youtu.be/CB76_GDrPsE)
 
